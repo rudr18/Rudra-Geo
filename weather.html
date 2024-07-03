@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="weather-style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-logo" href="#">
+                <img src="asset/logo.png" alt="Logo">
+                
+            </a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="index.html">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="forward.html">Forward Geolocation</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="reverse.html">Reverse Geolocation</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="weather.html">Weather</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="map.html">Map</a>
+                </li>
+                <li class="navbar-item about">
+                    <a class="navbar-link" href="about.html">About</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Weather Form -->
+    <div class="container">
+        <h1>Weather Information</h1>
+        <p>Enter a (Location) or (Latitude and Longitude) to get the weather information:</p>
+        <p class="tip">Tip: For Accurate results use Option 2 (Latitude and Longitude)</p>
+        <p class="tip">Note: If you fill both  then we consider option(1)</p>
+        <form id="weatherForm">
+            <h3>Option 1: Enter Location</h3>
+            <div class="form-group">
+                <label for="city-input">Location</label>
+                <input type="text" id="city-input" name="city" placeholder="Enter city name">
+            </div>
+
+            <h3>Option 2: Enter Latitude and Longitude</h3>
+            <div class="form-group">
+                <label for="latitude-input">Latitude</label>
+                <input type="text" id="latitude-input" name="latitude" placeholder="Enter latitude">
+            </div>
+            <div class="form-group">
+                <label for="longitude-input">Longitude</label>
+                <input type="text" id="longitude-input" name="longitude" placeholder="Enter longitude">
+            </div>
+            
+            
+            <p class="tip">If you don't know the latitude and longitude, go to the <a href="map.html">Map</a>  and use "Use Current Location" to get the coordinates, then put them here.</p>
+            
+            <button type="submit" id="search-button">Get Weather</button>
+        </form>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>

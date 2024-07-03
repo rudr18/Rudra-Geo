@@ -1,0 +1,217 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+/* Navbar */
+.navbar {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 70px;
+    margin-right: 9px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+.navbar-logo {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Map */
+#map {
+    height: 350px;
+    margin-top: 20px;
+}
+
+/* Tip */
+.tip {
+    margin-top: 20px;
+    background-color: #e7f3fe;
+    color: #31708f;
+    padding: 10px;
+    border-radius: 4px;
+    /* display: none; Initially hidden */
+}
+/* Map adjustments */
+#map {
+    height: 350px; 
+    width: 100%; 
+    max-width: 100%; 
+    margin-top: 20px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+/* for about */
+/* Add this to your existing CSS file */
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-item.about {
+    margin-left: auto; /* Pushes the "About" link to the right */
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Mobile Menu */
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+    }
+
+    .navbar-item.about {
+        margin-left: 0; /* Reset margin for mobile view */
+    }
+}

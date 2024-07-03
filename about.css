@@ -1,0 +1,218 @@
+/* Reset and global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 4px solid #000;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+    filter: brightness(150%);
+}
+
+.name {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.linkedin {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.linkedin a {
+    text-decoration: none;
+    color: #0077b5;
+    font-size: 20px;
+}
+
+.linkedin a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    margin-top: 40px;
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+}
+
+.box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.box h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #666;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+/* linked in logo */
+.linkedin img {
+    width: 24px; /* Adjusted size */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px; /* Add some space between the logo and the text */
+}
+/* Navbar */
+.navbar {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 70px;
+    margin-right: 9px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+.navbar-logo {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+    }
+}
+/* for about */
+/* Add this to your existing CSS file */
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-item.about {
+    margin-left: auto; /* Pushes the "About" link to the right */
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Mobile Menu */
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+    }
+
+    .navbar-item.about {
+        margin-left: 0; 
+    }
+}

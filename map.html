@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Locator</title>
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <!-- Put this after CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-logo" href="#">
+                <img src="asset/logo.png" alt="Logo">
+                
+            </a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="index.html">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="forward.html">Forward Geolocation</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="reverse.html">Reverse Geolocation</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="weather.html">Weather</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="map.html">Map</a>
+                </li>
+                <li class="navbar-item about">
+                    <a class="navbar-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Map Form -->
+    <div class="container">
+        <h1>Locate on Map</h1>
+        <p>Enter the latitude and longitude to locate it on the map:</p>
+        <form id="mapForm">
+            <div class="form-group">
+                <label for="latitude-input">Latitude</label>
+                <input type="text" id="latitude-input" name="latitude" placeholder="Enter latitude" required>
+            </div>
+            <div class="form-group">
+                <label for="longitude-input">Longitude</label>
+                <input type="text" id="longitude-input" name="longitude" placeholder="Enter longitude" required>
+            </div>
+            <button type="submit" id="locate-button">Locate</button>
+        </form>
+    
+        <button id="current-location-button">Use Current Location</button>
+    
+        <div id="tip" class="tip">
+            <p>If you have an address, you can use the <a href="forward.html">Forward Geolocation</a> page to convert it to latitude and longitude.</p>
+        </div>
+    
+        
+    </div>
+    
+
+        <div id="map"></div>
+    </div>
+
+    <script src="map.js"></script>
+</body>
+</html>

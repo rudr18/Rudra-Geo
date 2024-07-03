@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forward Geolocation</title>
+    <link rel="stylesheet" href="forward-style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-logo" href="#">
+                <img src="asset/logo.png" alt="Logo">
+                
+            </a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="index.html">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="forward.html">Forward Geolocation</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="reverse.html">Reverse Geolocation</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="weather.html">Weather</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="map.html">Map</a>
+                </li>
+                <li class="navbar-item about">
+                    <a class="navbar-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Forward Geolocation Form -->
+    <div class="container">
+        <h1>Forward Geolocation</h1>
+        <p>Enter the address details to get its coordinates:</p>
+        <form id="geoform">
+            <div class="form-group">
+                <label for="streetNumber">Street Name and Number</label>
+                <input type="text" id="streetNumber" name="streetNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="postalCode">Postal/PIN/ZIP Code</label>
+                <input type="text" id="postalCode" name="postal-pin-zip-Code" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+            <button type="submit">Get Coordinates</button>
+        </form>
+
+        <div id="result" class="result">
+            <h2>Coordinates:</h2>
+            <p id="coordinates"></p>
+        </div>
+    </div>
+
+    <script src="forward.js"></script>
+</body>
+</html>

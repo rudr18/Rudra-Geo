@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <a class="navbar-logo" href="#">
+            <img src="asset/logo.png" alt="Logo">
+            
+        </a>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li class="navbar-item">
+                <a class="navbar-link" href="forward.html">Forward Geolocation</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-link" href="reverse.html">Reverse Geolocation</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-link" href="weather.html">Weather</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-link" href="map.html">Map</a>
+            </li>
+            <li class="navbar-item about">
+                <a class="navbar-link" href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="profile-pic">
+        <img src="asset/about_img.jpeg" alt="Profile Picture">
+    </div>
+    <div class="name">Rudraksh</div>
+    <div class="linkedin">
+        <a href="https://www.linkedin.com/in/rudraksh-mehta-b52307273/" target="_blank">
+            <img src="asset/linked2.png" alt="LinkedIn"> Connect on LinkedIn
+        </a>
+    </div>
+
+    <div class="section">
+        <h1>Project Overview</h1>
+        <div class="box">
+            <h3>Project Scope and Features</h3>
+            <ul>
+                <li>Forward Geocoding: Converts addresses into geographical coordinates (latitude and longitude).</li>
+                <li>Reverse Geocoding: Converts coordinates into human-readable addresses.</li>
+                <li>Weather Forecasting: Provides current weather conditions including temperature, humidity, wind speed, and precipitation chance.</li>
+                <li>Mapping: Displays locations on an interactive map, allowing users to visualize geographical data. The map also includes an option to automatically detect the user's current location.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h1>Tips for Users</h1>
+        <div class="box">
+            <ul>
+                <li>Ensure accuracy in entering addresses or coordinates for precise results.</li>
+                <li>Utilize the map functionalities to explore and visualize geographical data effectively.</li>
+                <li>Optimize weather reports by providing accurate location coordinates.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h1>Conclusion</h1>
+        <div class="box">
+            <p>Rudra-Geo aims to simplify access to geolocation and weather information, catering to users' needs for accurate and timely data retrieval.</p>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for Navbar Toggle -->
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbarMenu = document.querySelector('.navbar-menu');
+
+    mobileMenu.addEventListener('click', () => {
+        navbarMenu.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

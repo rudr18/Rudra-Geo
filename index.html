@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudra-Geo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <!-- Full-page Background -->
+    <div class="background">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a class="navbar-logo" href="#">
+                    <img src="asset/logo.png" alt="Logo">
+                    
+                </a>
+                <div class="navbar-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar-menu">
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="forward.html">Forward Geolocation</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="reverse.html">Reverse Geolocation</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="weather.html">Weather</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="map.html">Map</a>
+                    </li>
+                    <li class="navbar-item about">
+                        <a class="navbar-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Catchy Homepage -->
+        <header class="jumbotron">
+            <h1 class="jumbotron-title">Welcome to Rudra-Geo</h1>
+            <p class="jumbotron-subtitle">Your one-stop solution for geolocation and weather information.</p>
+            <!-- <a class="jumbotron-button" href="#features">Learn more</a> -->
+        </header>
+    </div>
+
+    <!-- Features Sections with Animated Shapes -->
+    <div class="container">
+        <section id="features" class="feature-section">
+            <div class="feature-box" id="box1">
+                <h2>Forward Geolocation</h2>
+                <p>Forward geolocation, also simply known as geocoding, is the process of converting a descriptive location (like an address) into a specific geographical location on the Earth's surface. This is typically done by translating the address into a pair of coordinates, most commonly latitude and longitude.                    
+                    </p>
+            </div>
+            <div class="feature-box" id="box2">
+                <h2>Reverse Geolocation</h2>
+                <p>Reverse geolocation, also known as address lookup, is the opposite of forward geolocation. It's the process of converting geographic coordinates (latitude and longitude) into a human-readable description of a location.</p>
+            </div>
+            <div class="feature-box" id="box3">
+                <h2>Current Weather</h2>
+                <p>Get the current weather for a specific location.We'll display the current temperature, feels-like temperature, weather description (e.g., sunny, cloudy, rainy), and other relevant information such as humidity, wind speed, and chance of precipitation.</p>
+            </div>
+            <div class="feature-box" id="box4">
+                <h2>Map</h2>
+                <p>Locate the point on the map.</p>
+            </div>
+        </section>
+
+        <!-- Instructions and Tips -->
+        <section id="instructions-tips">
+            <h2>Instructions and Tips</h2>
+            <ul>
+                <li>Always ensure correct spelling and formatting when entering addresses or coordinates.</li>
+                <li>For best results in weather reports, use precise location coordinates.</li>
+                <li>Explore the map functionalities to visualize geographical data.</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Rudra-Geo. Created by Rudraksh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Navbar Toggle -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbarMenu = document.querySelector('.navbar-menu');
+    
+        mobileMenu.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    
+        const box1 = document.querySelector('#box1');
+        box1.addEventListener('click', () => {
+            window.location.href = 'forward.html';
+        });
+    
+        const box2 = document.querySelector('#box2');
+        box2.addEventListener('click', () => {
+            window.location.href = 'reverse.html';
+        });
+    
+        const box3 = document.querySelector('#box3');
+        box3.addEventListener('click', () => {
+            window.location.href = 'weather.html';
+        });
+    
+        const box4 = document.querySelector('#box4');
+        box4.addEventListener('click', () => {
+            window.location.href = 'map.html';
+        });
+
+    </script>
+    
+</body>
+</html>

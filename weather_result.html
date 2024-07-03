@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Results</title>
+    <link rel="stylesheet" href="weather-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-logo" href="#">
+                <img src="asset/logo.png" alt="Logo">
+                
+            </a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="index.html">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="forward.html">Forward Geolocation</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="reverse.html">Reverse Geolocation</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="weather.html">Weather</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="map.html">Map</a>
+                </li>
+                <li class="navbar-item about">
+                    <a class="navbar-link" href="about.html">About</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Weather Results -->
+    <div class="container">
+        <h1>Weather Results</h1>
+        <div id="weather-info"></div>
+        <canvas id="weather-chart" width="400" height="200"></canvas>
+    </div>
+
+    <script src="weather-result.js"></script>
+</body>
+</html>
